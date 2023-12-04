@@ -1,0 +1,386 @@
+
+*** Running vivado
+    with args -log mainFile.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mainFile.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source mainFile.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 395.309 ; gain = 70.859
+Command: read_checkpoint -auto_incremental -incremental C:/Xilinx/Projects/PC3/PC.srcs/utils_1/imports/synth_1/testmain.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Xilinx/Projects/PC3/PC.srcs/utils_1/imports/synth_1/testmain.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mainFile -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27232
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'mux1Out', assumed default net type 'wire' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/mainFile.v:19]
+WARNING: [Synth 8-8895] 'mux1Out' is already implicitly declared on line 19 [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/mainFile.v:38]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1206.016 ; gain = 408.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mainFile' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/mainFile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/pc.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/pc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pcAdder' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/pcAdder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdder' (0#1) [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/pcAdder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'instMem' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/Instruction_Mem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'instMem' (0#1) [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/Instruction_Mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'controlUnit' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/controlUnit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controlUnit' (0#1) [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/controlUnit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'registerFile' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/registerFile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'registerFile' (0#1) [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/registerFile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signExtension' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/signExtension.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signExtension' (0#1) [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/signExtension.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/multiplexer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/multiplexer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dataMem' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dataMem' (0#1) [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mainFile' (0#1) [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/mainFile.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1339.691 ; gain = 542.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1339.691 ; gain = 542.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1339.691 ; gain = 542.645
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1339.691 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projects/PC3/PC.srcs/constrs_2/new/cuSimTest.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/PC3/PC.srcs/constrs_2/new/cuSimTest.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Projects/PC3/PC.srcs/constrs_2/new/cuSimTest.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mainFile_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mainFile_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1438.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1438.887 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'memRead_reg' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/controlUnit.v:10]
+WARNING: [Synth 8-327] inferring latch for variable 'aluOp_reg' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/controlUnit.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'memWrite_reg' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/controlUnit.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'aluSrc_reg' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/controlUnit.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'regWrite_reg' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/controlUnit.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'base_reg' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/multiplexer.v:11]
+WARNING: [Synth 8-327] inferring latch for variable 'base_reg' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/alu.v:11]
+WARNING: [Synth 8-327] inferring latch for variable 'readData_reg' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[255]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[254]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[253]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[252]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[251]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[250]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[249]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[248]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[247]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[246]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[245]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[244]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[243]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[242]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[241]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[240]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[239]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[238]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[237]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[236]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[235]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[234]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[233]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[232]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[231]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[230]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[229]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[228]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[227]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[226]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[225]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[224]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[223]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[222]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[221]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[220]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[219]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[218]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[217]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[216]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[215]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[214]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[213]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[212]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[211]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[210]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[209]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[208]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[207]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[206]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[205]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[204]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[203]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[202]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[201]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[200]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[199]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[198]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[197]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[196]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[195]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[194]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[193]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[192]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[191]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[190]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[189]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[188]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[187]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[186]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[185]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[184]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[183]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[182]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[181]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[180]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[179]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[178]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[177]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[176]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[175]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[174]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[173]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[172]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[171]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[170]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[169]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[168]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[167]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[166]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[165]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'dataMemoryArray_reg[164]' [C:/Xilinx/Projects/PC3/PC.srcs/sources_1/new/dataMem.v:32]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 271   
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (MUX0/base_reg[7]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX0/base_reg[6]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX0/base_reg[5]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX0/base_reg[4]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX0/base_reg[3]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX0/base_reg[2]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX0/base_reg[1]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX0/base_reg[0]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (ALU/base_reg[7]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (ALU/base_reg[6]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (ALU/base_reg[5]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (ALU/base_reg[4]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (ALU/base_reg[3]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (ALU/base_reg[2]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (ALU/base_reg[1]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (ALU/base_reg[0]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX1/base_reg[7]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX1/base_reg[6]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX1/base_reg[5]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX1/base_reg[4]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX1/base_reg[3]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX1/base_reg[2]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX1/base_reg[1]) is unused and will be removed from module mainFile.
+WARNING: [Synth 8-3332] Sequential element (MUX1/base_reg[0]) is unused and will be removed from module mainFile.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT2   |    54|
+|4     |LUT3   |    41|
+|5     |LUT4   |    33|
+|6     |LUT5   |     4|
+|7     |LUT6   |   811|
+|8     |MUXF7  |   272|
+|9     |MUXF8  |   136|
+|10    |FDRE   |    23|
+|11    |FDSE   |     8|
+|12    |LD     |  2056|
+|13    |LDC    |     2|
+|14    |LDCP   |     2|
+|15    |LDP    |     1|
+|16    |IBUF   |     2|
+|17    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.887 ; gain = 641.840
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 289 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 1438.887 ; gain = 542.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.887 ; gain = 641.840
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1438.887 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2471 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'mainFile' is not ideal for floorplanning, since the cellview 'dataMem' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1438.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2061 instances were transformed.
+  LD => LDCE: 2056 instances
+  LDC => LDCE: 2 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 2 instances
+  LDP => LDPE: 1 instance 
+
+Synth Design complete, checksum: ae6f83ff
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1438.887 ; gain = 1018.715
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Projects/PC3/PC.runs/synth_1/mainFile.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mainFile_utilization_synth.rpt -pb mainFile_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 15 00:22:19 2023...

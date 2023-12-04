@@ -1,0 +1,16 @@
+Time resolution is 1 ps
+                   0pcOut=  0, pcIn=  1, clk=1, rst=1, inst= 16, readData1=  1, readData2=  5, memRead=0, memToReg=0, aluOp=0, memWrite=0, aluSrc=0, regWrite=1, signExtensionOut=  0, mux0Out=  5, aluOut=  6, mux1Out=  6
+                   1pcOut=  0, pcIn=  1, clk=0, rst=0, inst= 16, readData1=  1, readData2=  5, memRead=0, memToReg=0, aluOp=0, memWrite=0, aluSrc=0, regWrite=1, signExtensionOut=  0, mux0Out=  5, aluOut=  6, mux1Out=  6
+                   2pcOut=  1, pcIn=  2, clk=1, rst=0, inst=150, readData1=  1, readData2=  6, memRead=0, memToReg=0, aluOp=0, memWrite=0, aluSrc=1, regWrite=1, signExtensionOut=  6, mux0Out=  6, aluOut=  7, mux1Out=  7
+                   3pcOut=  1, pcIn=  2, clk=0, rst=0, inst=150, readData1=  1, readData2=  6, memRead=0, memToReg=0, aluOp=0, memWrite=0, aluSrc=1, regWrite=1, signExtensionOut=  6, mux0Out=  6, aluOut=  7, mux1Out=  7
+                   4pcOut=  2, pcIn=  3, clk=1, rst=0, inst=178, readData1=  1, readData2=  7, memRead=0, memToReg=0, aluOp=0, memWrite=1, aluSrc=1, regWrite=0, signExtensionOut=  2, mux0Out=  2, aluOut=  3, mux1Out=  3
+                   5pcOut=  2, pcIn=  3, clk=0, rst=0, inst=178, readData1=  1, readData2=  7, memRead=0, memToReg=0, aluOp=0, memWrite=1, aluSrc=1, regWrite=0, signExtensionOut=  2, mux0Out=  2, aluOut=  3, mux1Out=  3
+                   6pcOut=  3, pcIn=  4, clk=1, rst=0, inst=211, readData1=  1, readData2=  7, memRead=1, memToReg=1, aluOp=0, memWrite=0, aluSrc=1, regWrite=1, signExtensionOut=  3, mux0Out=  3, aluOut=  4, mux1Out=  4
+                   7pcOut=  3, pcIn=  4, clk=0, rst=0, inst=211, readData1=  1, readData2=  7, memRead=1, memToReg=1, aluOp=0, memWrite=0, aluSrc=1, regWrite=1, signExtensionOut=  3, mux0Out=  3, aluOut=  4, mux1Out=  4
+                   8pcOut=  4, pcIn=  5, clk=1, rst=0, inst=210, readData1=  1, readData2=  4, memRead=1, memToReg=1, aluOp=0, memWrite=0, aluSrc=1, regWrite=1, signExtensionOut=  2, mux0Out=  2, aluOut=  3, mux1Out=  7
+                   9pcOut=  4, pcIn=  5, clk=0, rst=0, inst=210, readData1=  1, readData2=  4, memRead=1, memToReg=1, aluOp=0, memWrite=0, aluSrc=1, regWrite=1, signExtensionOut=  2, mux0Out=  2, aluOut=  3, mux1Out=  7
+                  10pcOut=  5, pcIn=  6, clk=1, rst=0, inst=243, readData1=  1, readData2=  7, memRead=0, memToReg=0, aluOp=1, memWrite=0, aluSrc=1, regWrite=1, signExtensionOut=  3, mux0Out=  3, aluOut=  8, mux1Out=  8
+                  11pcOut=  5, pcIn=  6, clk=0, rst=0, inst=243, readData1=  1, readData2=  7, memRead=0, memToReg=0, aluOp=1, memWrite=0, aluSrc=1, regWrite=1, signExtensionOut=  3, mux0Out=  3, aluOut=  8, mux1Out=  8
+                  12pcOut=  6, pcIn=  7, clk=1, rst=0, inst=144, readData1=  1, readData2=  8, memRead=0, memToReg=0, aluOp=0, memWrite=0, aluSrc=1, regWrite=1, signExtensionOut=  0, mux0Out=  0, aluOut=  1, mux1Out=  1
+                  13pcOut=  6, pcIn=  7, clk=0, rst=0, inst=144, readData1=  1, readData2=  8, memRead=0, memToReg=0, aluOp=0, memWrite=0, aluSrc=1, regWrite=1, signExtensionOut=  0, mux0Out=  0, aluOut=  1, mux1Out=  1
+$finish called at time : 14 ns : File "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/testPC.v" Line 32

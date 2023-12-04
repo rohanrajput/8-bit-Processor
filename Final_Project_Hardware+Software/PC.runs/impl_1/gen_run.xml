@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1681532547">
+  <File Type="ROUTE-PWR" Name="mainFile_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="mainFile.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="mainFile_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="mainFile_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="mainFile.msk"/>
+  <File Type="ROUTE-CLK" Name="mainFile_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="mainFile.vdi"/>
+  <File Type="BG-BIT" Name="mainFile.bit"/>
+  <File Type="BG-DRC" Name="mainFile.drc"/>
+  <File Type="BG-BGN" Name="mainFile.bgn"/>
+  <File Type="BG-BIN" Name="mainFile.bin"/>
+  <File Type="BITSTR-RBT" Name="mainFile.rbt"/>
+  <File Type="BITSTR-NKY" Name="mainFile.nky"/>
+  <File Type="BITSTR-BMM" Name="mainFile_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="mainFile.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mainFile_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="mainFile.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="mainFile.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="mainFile_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="mainFile.hwdef"/>
+  <File Type="PLACE-IO" Name="mainFile_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mainFile_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mainFile_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mainFile_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mainFile_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="mainFile_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mainFile_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="mainFile_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mainFile_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mainFile_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="mainFile_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="mainFile_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mainFile_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mainFile_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mainFile_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mainFile_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="mainFile_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="mainFile_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="mainFile_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="mainFile_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="mainFile_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="mainFile_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mainFile_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="mainFile_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mainFile_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mainFile_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mainFile_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="mainFile_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mainFile_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="mainFile.pdi"/>
+  <File Type="RCFI_FILE" Name="mainFile.rcfi"/>
+  <File Type="CFI_FILE" Name="mainFile.cfi"/>
+  <File Type="RNPI_FILE" Name="mainFile.rnpi"/>
+  <File Type="NPI_FILE" Name="mainFile.npi"/>
+  <File Type="RBD_FILE" Name="mainFile.rbd"/>
+  <File Type="ROUTE-RQS" Name="mainFile_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="mainFile_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Instruction_Mem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/controlUnit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dataMem.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/multiplexer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pcAdder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/registerFile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/signExtension.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mainFile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/testPC.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DataMem.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mainFile"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
+    <File Path="$PSRCDIR/constrs_2/new/cuSimTest.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_2/new/cuSimTest.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/testmain.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

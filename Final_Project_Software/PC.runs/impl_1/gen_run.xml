@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1681527807">
+  <File Type="ROUTE-PWR" Name="cuSimTest_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="cuSimTest.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="cuSimTest_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="cuSimTest_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="cuSimTest.msk"/>
+  <File Type="ROUTE-CLK" Name="cuSimTest_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="cuSimTest.vdi"/>
+  <File Type="BG-BIT" Name="cuSimTest.bit"/>
+  <File Type="BG-DRC" Name="cuSimTest.drc"/>
+  <File Type="BG-BGN" Name="cuSimTest.bgn"/>
+  <File Type="BG-BIN" Name="cuSimTest.bin"/>
+  <File Type="BITSTR-RBT" Name="cuSimTest.rbt"/>
+  <File Type="BITSTR-NKY" Name="cuSimTest.nky"/>
+  <File Type="BITSTR-BMM" Name="cuSimTest_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="cuSimTest.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="cuSimTest_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="cuSimTest.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="cuSimTest_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="cuSimTest.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="cuSimTest_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="cuSimTest.hwdef"/>
+  <File Type="PLACE-IO" Name="cuSimTest_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="cuSimTest_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="cuSimTest_utilization_placed.pb"/>
+  <File Type="ROUTE-RQS" Name="cuSimTest_routed.rqs"/>
+  <File Type="PLACE-CTRL" Name="cuSimTest_control_sets_placed.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="cuSimTest_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-DRC" Name="cuSimTest_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="cuSimTest_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="cuSimTest_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="cuSimTest_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="cuSimTest_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="cuSimTest_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="cuSimTest_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="cuSimTest_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="cuSimTest_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="cuSimTest_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="cuSimTest_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="cuSimTest_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="cuSimTest_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="cuSimTest_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="cuSimTest_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="cuSimTest_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="cuSimTest_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="cuSimTest_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="cuSimTest_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="cuSimTest_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="cuSimTest_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="cuSimTest_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="cuSimTest_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="cuSimTest.pdi"/>
+  <File Type="RCFI_FILE" Name="cuSimTest.rcfi"/>
+  <File Type="CFI_FILE" Name="cuSimTest.cfi"/>
+  <File Type="RNPI_FILE" Name="cuSimTest.rnpi"/>
+  <File Type="NPI_FILE" Name="cuSimTest.npi"/>
+  <File Type="RBD_FILE" Name="cuSimTest.rbd"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="cuSimTest_postroute_physopted.rqs"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/CUSimTest.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Instruction_Mem.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/controlUnit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dataMem.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mainFile.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/multiplexer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pc.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pcAdder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/registerFile.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/signExtension.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/testPC.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DataMem.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="cuSimTest"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
+    <File Path="$PSRCDIR/constrs_2/new/CUSimTest.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_2/new/CUSimTest.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/testmain.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

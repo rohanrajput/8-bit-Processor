@@ -1,0 +1,1367 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Apr 15 00:23:43 2023
+| Host         : Goutham running 64-bit major release  (build 9200)
+| Command      : report_drc -file mainFile_drc_routed.rpt -pb mainFile_drc_routed.pb -rpx mainFile_drc_routed.rpx
+| Design       : mainFile
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 263
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 261        |
+| PLCK-12  | Warning  | Clock Placer Checks                                 | 1          |
++----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net CONTROLUNIT/E[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/readData_reg[7]_i_2/O, cell CONTROLUNIT/readData_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net CONTROLUNIT/__1/i__n_0 is a gated clock net sourced by a combinational pin CONTROLUNIT/__1/i_/O, cell CONTROLUNIT/__1/i_. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net CONTROLUNIT/aluSrc_reg/G0 is a gated clock net sourced by a combinational pin CONTROLUNIT/aluSrc_reg/L3_2/O, cell CONTROLUNIT/aluSrc_reg/L3_2 (in CONTROLUNIT/aluSrc_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[108][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[108][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[108][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[108][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[100][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[100][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[124][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[124][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[124][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[138][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[138][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[138][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[138][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[137][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[137][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[141][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[141][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[140][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[140][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[136][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[136][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[133][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[133][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[132][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[132][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[129][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[129][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[142][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[142][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[142][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[142][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[134][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[134][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[142][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[130][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[130][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[148][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[148][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[148][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[14][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[14][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[13][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[13][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_10[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[3][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[3][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_11[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[2][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[2][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_12[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[1][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[1][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_13[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[0][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[0][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[12][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[12][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[11][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[11][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[10][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[10][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[9][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[9][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_5[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[8][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[8][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_6[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[7][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[7][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_7[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[6][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[6][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_8[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[5][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[5][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_9[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[4][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[4][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[156][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[156][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[154][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[154][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[152][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[152][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[144][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[144][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[92][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[92][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[80][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[80][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_5[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[18][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[18][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_6[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[16][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[16][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[163][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[163][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[163][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[168][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[168][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[168][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[172][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[172][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[172][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[172][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[164][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[164][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[172][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[160][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[160][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[187][7]_i_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[187][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[187][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[188][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[188][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[188][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[204][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[204][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[202][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[202][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_10[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[139][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[139][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_11[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[135][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[135][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_12[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[131][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[131][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_13[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[128][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[128][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_14[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[78][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[78][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_15[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[75][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[75][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_16[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[73][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[73][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_17[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[71][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[71][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_18[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[67][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[67][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_19[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[64][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[64][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[201][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[201][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[200][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[200][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[198][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[198][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[197][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[197][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_5[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[196][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[196][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_6[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[195][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[195][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_7[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[194][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[194][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_8[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[193][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[193][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#69 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_9[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[192][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[192][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#70 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[216][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[58][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[58][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#71 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[216][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[56][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[56][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#72 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[216][7]_i_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[216][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[216][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#73 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[216][7]_i_3_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[212][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[212][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#74 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[216][7]_i_3_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[208][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[208][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#75 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[216][7]_i_3_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[153][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[153][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#76 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[219][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[27][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[27][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#77 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[219][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[19][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[19][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#78 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[220][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[220][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#79 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[218][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[218][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#80 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_10[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[91][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[91][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#81 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_11[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[87][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[87][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#82 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[217][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[217][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#83 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[214][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[214][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#84 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[213][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[213][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#85 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[211][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[211][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#86 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_5[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[206][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[206][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#87 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_6[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[205][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[205][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#88 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_7[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[199][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[199][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#89 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_8[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[94][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[94][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#90 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_9[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[93][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[93][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#91 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[232][7]_i_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[232][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[232][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#92 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[232][7]_i_3_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[224][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[224][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#93 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[234][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[234][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[234][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#94 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[234][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[233][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[233][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#95 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[243][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[51][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[51][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#96 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[246][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[54][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[54][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#97 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[247][7]_i_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[230][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[230][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#98 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[247][7]_i_4_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[229][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[229][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#99 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[247][7]_i_4_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[227][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[227][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#100 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[247][7]_i_4_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[103][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[103][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#101 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[248][7]_i_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[248][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[248][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#102 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[248][7]_i_3_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[244][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[244][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#103 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[248][7]_i_3_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[236][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[236][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#104 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[248][7]_i_3_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[121][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[121][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#105 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[248][7]_i_3_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[117][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[117][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#106 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[252][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[252][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#107 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[250][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[250][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#108 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_10[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[125][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[125][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#109 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_11[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[123][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[123][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#110 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_12[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[119][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[119][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#111 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[249][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[249][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#112 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[246][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[246][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#113 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[245][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[245][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#114 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[243][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[243][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#115 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_5[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[222][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[222][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#116 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_6[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[221][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[221][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#117 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_7[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[219][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[219][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#118 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_8[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[215][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[215][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#119 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_9[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[126][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[126][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#120 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[242][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[242][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#121 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[241][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[241][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#122 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_10[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[180][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[180][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#123 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_11[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[179][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[179][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#124 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_12[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[178][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[178][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#125 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_13[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[177][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[177][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#126 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_14[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[176][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[176][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#127 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_15[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[174][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[174][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#128 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_16[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[173][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[173][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#129 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_17[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[171][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[171][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#130 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_18[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[170][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[170][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#131 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_19[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[169][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[169][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#132 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[240][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[240][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#133 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_20[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[167][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[167][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#134 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_21[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[166][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[166][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#135 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_22[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[165][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[165][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#136 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_23[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[162][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[162][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#137 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_24[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[161][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[161][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#138 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_25[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[122][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[122][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#139 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_26[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[120][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[120][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#140 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_27[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[118][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[118][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#141 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_28[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[116][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[116][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#142 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_29[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[115][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[115][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#143 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[228][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[228][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#144 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_30[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[114][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[114][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#145 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_31[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[113][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[113][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#146 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_32[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[112][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[112][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#147 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_33[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[110][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[110][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#148 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_34[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[109][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[109][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#149 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_35[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[107][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[107][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#150 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_36[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[106][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[106][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#151 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_37[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[105][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[105][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#152 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_38[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[104][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[104][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#153 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_39[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[102][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[102][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#154 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[226][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[226][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#155 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_40[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[101][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[101][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#156 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_41[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[99][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[99][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#157 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_42[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[98][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[98][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#158 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_43[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[97][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[97][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#159 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_44[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[62][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[62][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#160 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_45[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[61][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[61][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#161 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_46[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[60][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[60][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#162 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_47[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[59][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[59][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#163 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_48[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[57][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[57][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#164 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_49[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[55][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[55][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#165 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[225][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[225][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#166 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_50[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[53][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[53][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#167 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_51[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[50][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[50][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#168 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_52[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[49][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[49][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#169 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_53[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[48][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[48][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#170 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_54[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[39][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[39][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#171 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_55[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[35][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[35][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#172 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_5[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[186][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[186][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#173 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_6[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[185][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[185][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#174 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_7[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[184][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[184][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#175 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_8[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[182][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[182][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#176 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_9[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[181][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[181][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#177 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[26][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[26][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[26][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#178 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[26][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[25][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[25][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#179 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[29][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[29][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#180 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[28][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[28][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#181 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[24][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[24][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#182 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[21][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[21][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#183 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[20][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[20][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#184 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[17][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[17][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#185 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[30][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[30][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[30][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#186 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[30][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[22][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[22][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#187 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[43][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[43][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[43][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#188 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[43][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[42][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[42][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#189 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[43][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[41][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[41][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#190 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[45][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[45][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#191 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[44][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[44][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#192 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[40][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[40][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#193 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[37][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[37][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#194 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[36][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[36][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#195 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[33][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[33][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#196 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[46][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[46][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[46][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#197 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[46][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[38][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[38][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#198 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[52][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[52][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[52][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#199 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[70][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[70][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[70][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#200 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[70][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[66][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[66][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#201 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[74][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[74][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[74][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#202 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[77][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[77][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#203 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[76][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[76][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#204 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[72][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[72][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#205 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[69][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[69][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#206 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[68][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[68][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#207 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[65][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[65][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#208 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[84][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[84][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[84][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#209 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[96][7]_i_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[96][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[96][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#210 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[96][7]_i_2_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[34][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[34][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#211 Warning
+Gated clock check  
+Net CONTROLUNIT/dataMemoryArray_reg[96][7]_i_2_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[32][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[32][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#212 Warning
+Gated clock check  
+Net CONTROLUNIT/memRead_reg/G0 is a gated clock net sourced by a combinational pin CONTROLUNIT/memRead_reg/L3_2/O, cell CONTROLUNIT/memRead_reg/L3_2 (in CONTROLUNIT/memRead_reg macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#213 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[255][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[255][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#214 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_0[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[254][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[254][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#215 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_10[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[210][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[210][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#216 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_11[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[209][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[209][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#217 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_12[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[207][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[207][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#218 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_13[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[203][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[203][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#219 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_14[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[191][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[191][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#220 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_15[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[190][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[190][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#221 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_16[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[189][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[189][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#222 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_17[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[183][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[183][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#223 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_18[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[175][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[175][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#224 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_19[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[159][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[159][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#225 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_1[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[253][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[253][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#226 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_20[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[158][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[158][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#227 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_21[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[157][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[157][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#228 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_22[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[155][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[155][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#229 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_23[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[151][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[151][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#230 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_24[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[150][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[150][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#231 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_25[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[149][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[149][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#232 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_26[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[147][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[147][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#233 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_27[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[146][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[146][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#234 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_28[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[145][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[145][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#235 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_29[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[143][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[143][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#236 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_2[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[251][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[251][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#237 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_30[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[127][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[127][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#238 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_31[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[111][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[111][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#239 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_32[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[95][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[95][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#240 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_33[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[90][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[90][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#241 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_34[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[89][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[89][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#242 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_35[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[88][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[88][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#243 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_36[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[86][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[86][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#244 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_37[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[85][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[85][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#245 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_38[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[83][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[83][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#246 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_39[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[82][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[82][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#247 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_3[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[247][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[247][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#248 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_40[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[81][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[81][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#249 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_41[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[79][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[79][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#250 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_42[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[63][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[63][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#251 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_43[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[47][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[47][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#252 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_44[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[31][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[31][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#253 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_45[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[23][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[23][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#254 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_46[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[15][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[15][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#255 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_4[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[239][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[239][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#256 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_5[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[238][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[238][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#257 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_6[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[237][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[237][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#258 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_7[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[235][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[235][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#259 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_8[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[231][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[231][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#260 Warning
+Gated clock check  
+Net CONTROLUNIT/readData_reg[7]_i_3_9[0] is a gated clock net sourced by a combinational pin CONTROLUNIT/dataMemoryArray_reg[223][7]_i_1/O, cell CONTROLUNIT/dataMemoryArray_reg[223][7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#261 Warning
+Gated clock check  
+Net PC/pcOut_reg[2]_1 is a gated clock net sourced by a combinational pin PC/memRead_reg_i_1/O, cell PC/memRead_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	clock_IBUF_inst (IBUF.O) is locked to W19
+	clock_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+
+Related violations: <none>
+
+

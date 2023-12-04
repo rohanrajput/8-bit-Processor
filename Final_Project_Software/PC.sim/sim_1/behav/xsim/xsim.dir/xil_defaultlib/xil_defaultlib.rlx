@@ -1,0 +1,16 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.sim/sim_1/behav/xsim/glbl.v,1681522075,verilog,,,,glbl,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/Instruction_Mem.v,1681522078,verilog,,C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/alu.v,,instMem,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/alu.v,1681522078,verilog,,C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/controlUnit.v,,alu,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/controlUnit.v,1681522078,verilog,,C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/dataMem.v,,controlUnit,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/dataMem.v,1681522078,verilog,,C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/mainFile.v,,dataMem,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/mainFile.v,1681522078,verilog,,C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/multiplexer.v,,mainFile,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/multiplexer.v,1681522078,verilog,,C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/pc.v,,mux,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/pc.v,1681522078,verilog,,C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/pcAdder.v,,pc,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/pcAdder.v,1681522078,verilog,,C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/registerFile.v,,pcAdder,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/registerFile.v,1681522078,verilog,,C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/signExtension.v,,registerFile,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/signExtension.v,1681522079,verilog,,C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/testPC.v,,signExtension,,,,,,,,
+C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/testPC.v,1681522079,verilog,,,,testmain,,,,,,,,

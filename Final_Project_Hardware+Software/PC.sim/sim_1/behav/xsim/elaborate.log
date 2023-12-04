@@ -1,0 +1,25 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testmain_behav xil_defaultlib.testmain xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Hardware+Software/PC.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Hardware+Software/PC.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.pcAdder
+Compiling module xil_defaultlib.instMem
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.registerFile
+Compiling module xil_defaultlib.signExtension
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.dataMem
+Compiling module xil_defaultlib.mainFile
+Compiling module xil_defaultlib.testmain
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testmain_behav

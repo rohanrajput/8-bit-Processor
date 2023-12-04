@@ -1,0 +1,341 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Apr 15 00:23:13 2023
+| Host         : Goutham running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file mainFile_control_sets_placed.rpt
+| Design       : mainFile
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   263 |
+|    Minimum number of control sets                        |   263 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    33 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   263 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |   257 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            2061 |          924 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               3 |            2 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              31 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+----------------------+-------------------+------------------+----------------+--------------+
+|                    Clock Signal                    |     Enable Signal    |  Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------------+----------------------+-------------------+------------------+----------------+--------------+
+|  CONTROLUNIT/aluSrc_reg/G0                         |                      |                   |                1 |              1 |         1.00 |
+|  CONTROLUNIT/memRead_reg/G0                        |                      |                   |                1 |              1 |         1.00 |
+|  PC/pcOut_reg[2]_1                                 |                      | PC/pcOut_reg[2]_0 |                1 |              1 |         1.00 |
+|  CONTROLUNIT/__1/i__n_0                            |                      | PC/pcOut_reg[1]_2 |                1 |              2 |         2.00 |
+|  clock_IBUF_BUFG                                   |                      |                   |                1 |              3 |         3.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[108][7]_i_2_0[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2_1[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2_2[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[142][7]_i_2[0]    |                      |                   |                6 |              8 |         1.33 |
+|  CONTROLUNIT/dataMemoryArray_reg[142][7]_i_2_0[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[142][7]_i_2_1[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[148][7]_i_2[0]    |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2_4[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2_0[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[138][7]_i_2_0[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2[0]     |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_0[0]   |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_1[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_10[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_11[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_12[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[124][7]_i_2[0]    |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[138][7]_i_2[0]    |                      |                   |                6 |              8 |         1.33 |
+|  CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2_3[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/E[0]                                  |                      |                   |                8 |              8 |         1.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_4[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_3[0]  |                      |                   |                6 |              8 |         1.33 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_8[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_4[0]   |                      |                   |                8 |              8 |         1.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_3[0]   |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_8[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_9[0]   |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_4[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[216][7]_i_3[0]    |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[216][7]_i_3_0[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3[0]    |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_1[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[163][7]_i_2[0]    |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_2[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_9[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_3[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_16[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_4[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_18[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_5[0]  |                      |                   |                8 |              8 |         1.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_6[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[172][7]_i_2_1[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_1[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[216][7]_i_2[0]    |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_7[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[216][7]_i_3_1[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_5[0]   |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_6[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_2[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_13[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_0[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_5[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_15[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_12[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_6[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_2[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_19[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_7[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_14[0] |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_5[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_0[0]  |                      |                   |                6 |              8 |         1.33 |
+|  CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_1[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2_3[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[187][7]_i_3[0]    |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[216][7]_i_3_2[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[219][7]_i_2[0]    |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_17[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_7[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[172][7]_i_2_0[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[168][7]_i_2[0]    |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[219][7]_i_2_0[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_11[0] |                      |                   |                6 |              8 |         1.33 |
+|  CONTROLUNIT/dataMemoryArray_reg[216][7]_i_2_0[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_10[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[156][7]_i_2[0]    |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_11[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_2[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_6[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[14][7]_i_2_13[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[172][7]_i_2[0]    |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2[0]    |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_0[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[204][7]_i_2_10[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[188][7]_i_2[0]    |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[247][7]_i_4[0]    |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[232][7]_i_3_0[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_16[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_21[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_22[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_24[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_25[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_27[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_2[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[234][7]_i_2[0]    |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_18[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_29[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_30[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_1[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_12[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_2[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_20[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_4[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_32[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_10[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[246][7]_i_2[0]    |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[248][7]_i_3[0]    |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_0[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_8[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_11[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_8[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_26[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_3[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_12[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[220][7]_i_3_9[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_31[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[248][7]_i_3_3[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_1[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[248][7]_i_3_2[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_28[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_17[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[243][7]_i_2[0]    |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_33[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_34[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_35[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_36[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_37[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[234][7]_i_2_0[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_23[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_10[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_13[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[247][7]_i_4_0[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_5[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[232][7]_i_3[0]    |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_15[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[248][7]_i_3_0[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[248][7]_i_3_1[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_9[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3[0]    |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_19[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[247][7]_i_4_1[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_11[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4[0]    |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_6[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[247][7]_i_4_2[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_7[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_0[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_14[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[252][7]_i_4_3[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_40[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2_3[0]   |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2_4[0]   |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[84][7]_i_2[0]     |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[96][7]_i_2[0]     |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[96][7]_i_2_0[0]   |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[96][7]_i_2_1[0]   |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_5[0]  |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[52][7]_i_2[0]     |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2[0]     |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[43][7]_i_2_1[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[46][7]_i_2_0[0]   |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_49[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_43[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_53[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_6[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2[0]     |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[43][7]_i_2_0[0]   |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[70][7]_i_2[0]     |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2_1[0]   |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_50[0] |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_52[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[30][7]_i_2[0]     |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_42[0] |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_44[0] |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2_3[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[30][7]_i_2_0[0]   |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_41[0] |                      |                   |                8 |              8 |         1.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_54[0] |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_55[0] |                      |                   |                6 |              8 |         1.33 |
+|  CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2_2[0]   |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_39[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2_2[0]   |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2_4[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2_3[0]   |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2_4[0]   |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[70][7]_i_2_0[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_46[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[74][7]_i_2[0]     |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_4[0]  |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_8[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[43][7]_i_2[0]     |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[46][7]_i_2[0]     |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_38[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_48[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2_0[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_7[0]  |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[29][7]_i_2_1[0]   |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_45[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2_0[0]   |                      |                   |                7 |              8 |         1.14 |
+|  CONTROLUNIT/dataMemoryArray_reg[26][7]_i_2[0]     |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_51[0] |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[45][7]_i_2_1[0]   |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2[0]     |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[26][7]_i_2_0[0]   |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_47[0] |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/dataMemoryArray_reg[254][7]_i_3_9[0]  |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2_0[0]   |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/dataMemoryArray_reg[77][7]_i_2_2[0]   |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_22[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_12[0]             |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/readData_reg[7]_i_3_24[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_19[0]             |                      |                   |                8 |              8 |         1.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_2[0]              |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3[0]                |                      |                   |                7 |              8 |         1.14 |
+|  CONTROLUNIT/readData_reg[7]_i_3_29[0]             |                      |                   |                8 |              8 |         1.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_30[0]             |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/readData_reg[7]_i_3_13[0]             |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_26[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_31[0]             |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_32[0]             |                      |                   |                6 |              8 |         1.33 |
+|  CONTROLUNIT/readData_reg[7]_i_3_34[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_36[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_38[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_43[0]             |                      |                   |                8 |              8 |         1.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_4[0]              |                      |                   |                6 |              8 |         1.33 |
+|  CONTROLUNIT/readData_reg[7]_i_3_42[0]             |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/readData_reg[7]_i_3_45[0]             |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_46[0]             |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_5[0]              |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/readData_reg[7]_i_3_27[0]             |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_33[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_37[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_39[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_6[0]              |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_14[0]             |                      |                   |                7 |              8 |         1.14 |
+|  CONTROLUNIT/readData_reg[7]_i_3_8[0]              |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_1[0]              |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_40[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_28[0]             |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_35[0]             |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_41[0]             |                      |                   |                8 |              8 |         1.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_3[0]              |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_9[0]              |                      |                   |                7 |              8 |         1.14 |
+|  CONTROLUNIT/readData_reg[7]_i_3_25[0]             |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_10[0]             |                      |                   |                2 |              8 |         4.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_44[0]             |                      |                   |                8 |              8 |         1.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_11[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_16[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_7[0]              |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_20[0]             |                      |                   |                4 |              8 |         2.00 |
+|  CONTROLUNIT/readData_reg[7]_i_3_0[0]              |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/readData_reg[7]_i_3_23[0]             |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_17[0]             |                      |                   |                6 |              8 |         1.33 |
+|  CONTROLUNIT/readData_reg[7]_i_3_21[0]             |                      |                   |                3 |              8 |         2.67 |
+|  CONTROLUNIT/readData_reg[7]_i_3_18[0]             |                      |                   |                7 |              8 |         1.14 |
+|  CONTROLUNIT/readData_reg[7]_i_3_15[0]             |                      |                   |                6 |              8 |         1.33 |
+|  CONTROLUNIT/dataMemoryArray_reg[141][7]_i_2[0]    |                      |                   |                5 |              8 |         1.60 |
+|  CONTROLUNIT/dataMemoryArray_reg[108][7]_i_2[0]    |                      |                   |                5 |              8 |         1.60 |
+|  clock_IBUF_BUFG                                   | CONTROLUNIT/regWrite | reset_IBUF        |               11 |             31 |         2.82 |
++----------------------------------------------------+----------------------+-------------------+------------------+----------------+--------------+
+
+

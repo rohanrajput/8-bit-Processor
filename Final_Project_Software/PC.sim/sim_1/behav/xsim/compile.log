@@ -1,0 +1,25 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/Instruction_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/controlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/dataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/mainFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mainFile
+WARNING: [VRFC 10-2938] 'mux1Out' is already implicitly declared on line 21 [C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/mainFile.v:40]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/multiplexer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/pcAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/registerFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registerFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/signExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.srcs/sources_1/new/testPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testmain
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Software/PC.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

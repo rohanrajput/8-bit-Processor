@@ -1,0 +1,16 @@
+Time resolution is 1 ps
+                   0clk=1, rst=1, readData1=  1, readData2=  5
+                   1clk=0, rst=0, readData1=  1, readData2=  5
+                   2clk=1, rst=0, readData1=  1, readData2=  6
+                   3clk=0, rst=0, readData1=  1, readData2=  6
+                   4clk=1, rst=0, readData1=  1, readData2=  7
+                   5clk=0, rst=0, readData1=  1, readData2=  7
+                   6clk=1, rst=0, readData1=  1, readData2=  7
+                   7clk=0, rst=0, readData1=  1, readData2=  7
+                   8clk=1, rst=0, readData1=  1, readData2=  4
+                   9clk=0, rst=0, readData1=  1, readData2=  4
+                  10clk=1, rst=0, readData1=  1, readData2=  7
+                  11clk=0, rst=0, readData1=  1, readData2=  7
+                  12clk=1, rst=0, readData1=  1, readData2=  8
+                  13clk=0, rst=0, readData1=  1, readData2=  8
+$finish called at time : 14 ns : File "C:/CSE 590 - Project 1 - Group 33/Group - 33 _ Final Project/Final_Project_Hardware+Software/PC.srcs/sources_1/new/testPC.v" Line 26

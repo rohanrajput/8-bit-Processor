@@ -1,0 +1,17 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/gouth/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sim_1/new/controlUnit_test1.v,1679256524,verilog,,,,controlUnit_test1,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sim_1/new/instMem_test.v,1679250392,verilog,,,,instMem_test,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sim_1/new/mux_test1.v,1679247570,verilog,,,,mux_Test,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sim_1/new/regFileTest.v,1679254483,verilog,,,,regFileTest,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sim_1/new/signExtension_test.v,1679248563,verilog,,,,signExtension_test,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sim_1/new/test1.v,1679182532,verilog,,,,test1,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sources_1/new/Instruction_Mem.v,1679250532,verilog,,C:/Users/gouth/project_1/project_1.srcs/sim_1/new/instMem_test.v,,instMem,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sources_1/new/Simple_proj1.v,1679244132,verilog,,C:/Users/gouth/project_1/project_1.srcs/sim_1/new/test1.v,,Simple_proj1,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sources_1/new/controlUnit.v,1679255688,verilog,,C:/Users/gouth/project_1/project_1.srcs/sim_1/new/controlUnit_test1.v,,controlUnit,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sources_1/new/mux_1.v,1679245321,verilog,,C:/Users/gouth/project_1/project_1.srcs/sim_1/new/mux_test1.v,,mux_1,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sources_1/new/registerFile.v,1680045392,verilog,,C:/Users/gouth/project_1/project_1.srcs/sim_1/new/regFileTest.v,,registerFile,,,,,,,,
+C:/Users/gouth/project_1/project_1.srcs/sources_1/new/signExtension.v,1679248302,verilog,,C:/Users/gouth/project_1/project_1.srcs/sim_1/new/signExtension_test.v,,signExtension,,,,,,,,
