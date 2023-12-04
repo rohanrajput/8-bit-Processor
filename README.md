@@ -49,9 +49,3 @@ This repository contains the Verilog code for an 8-bit processor implemented as 
 
 ## How to Use
 
-[Provide instructions on how to use the Verilog code, simulate it, and deploy it on the Xilinx FPGA board.]
-
-## License
-
-[Specify the license for the project.]
-
