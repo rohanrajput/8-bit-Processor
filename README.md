@@ -46,6 +46,3 @@ This repository contains the Verilog code for an 8-bit processor implemented as 
 
 - Applied theoretical knowledge of computer architecture to a practical project.
 - Enhanced skills in Verilog programming, simulation, and FPGA-based hardware testing.
-
-## How to Use
-
